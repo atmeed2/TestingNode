@@ -17,13 +17,19 @@ let requiredRange3 = [200, null];
 
 // Функция фильтрации цен
 function searchCourses(courses, range) {
+    // Можно Map'ом, но так проще
     for (let course of courses) {
         if(range[1] >= course.prices[0] && range[0] <= course.prices[0] || range[1] == null && range[0] <= course.prices[0]) {
             console.log(course)
         }
     }
+    
 
 }
+
+
+
+
 
 
 
